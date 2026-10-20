@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+      prefHeight="400.0" prefWidth="600.0" 
+      xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.mycompany.actividad15.PrimaryController">
+   <children>
+      <!-- Botones -->
+      <Button layoutX="37.0" layoutY="352.0" mnemonicParsing="false" onAction="#calculartodo" text="calcular estadisticas" />
+      <Button layoutX="215.0" layoutY="352.0" mnemonicParsing="false" onAction="#limpiartodo" text="limpiar" />
+      
+      <!-- Etiquetas de gastos -->
+      <Label layoutX="23.0" layoutY="65.0" text="alimentacion " />
+      <Label layoutX="31.0" layoutY="104.0" text="refrigerios" />
+      <Label layoutX="31.0" layoutY="144.0" text="transporte" />
+      <Label layoutX="31.0" layoutY="183.0" text="telefonia" />
+      <Label layoutX="31.0" layoutY="232.0" text="otros" />
+      
+      <!-- Etiquetas de resultados -->
+      <Label layoutX="346.0" layoutY="65.0" text="estadisticas" />
+      <Label layoutX="332.0" layoutY="116.0" text="total semanal" />
+      <Label layoutX="346.0" layoutY="196.0" text="gasto mas alto" />
+
+      <!-- Campos de entrada -->
+      <TextField fx:id="txtalimentos" layoutX="125.0" layoutY="61.0" />
+      <TextField fx:id="txtrefrigerios" layoutX="125.0" layoutY="100.0" />
+      <TextField fx:id="txttransporte" layoutX="125.0" layoutY="140.0" />
+      <TextField fx:id="txttelefonia" layoutX="125.0" layoutY="179.0" />
+      <TextField fx:id="txtotros" layoutX="125.0" layoutY="228.0" />
+
+      <!-- Campos de salida -->
+      <TextField fx:id="txtTotal" layoutX="311.0" layoutY="140.0" />
+      <TextField fx:id="txtingresardinero" layoutX="311.0" layoutY="228.0" />
+   </children>
+</Pane>
